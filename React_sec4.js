@@ -62,10 +62,22 @@
 // const sayHello = (name = "guest") => console.log(`こんにちは${name}さん!`);
 // sayHello();
 
-const myprofile={
-  age:31
-};
-const {age,name="guest"}=myprofile;
-console.log(age);
-console.log(name);
+// const myprofile={
+//   age:31
+// };
+// const {age,name="guest"}=myprofile;
+// console.log(age);
+// console.log(name);
 
+// オブジェクトの省略記法
+const name="jake";
+const age=31;
+
+// const myprofile={
+//   name:name,
+//   age:age,
+// }
+// console.log(myprofile);
+
+const myprofile={name, age}
+console.log(myprofile);
