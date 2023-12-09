@@ -50,14 +50,22 @@
 // const message2 = `名前は${name}です．年齢は${age}です`;
 // console.log(message2);
 
-const myprofile = ["jake", 31];
-// const message2 = `名前は${myprofile[0]}です．年齢は${myprofile[1]}です`;
-// console.log(message2);
+// const myprofile = ["jake", 31];
+// // const message2 = `名前は${myprofile[0]}です．年齢は${myprofile[1]}です`;
+// // console.log(message2);
 
-const [name, age] = myprofile;
-const message4 = `名前は${name}です．年齢は${age}です`;
-console.log(message4);
+// const [name, age] = myprofile;
+// const message4 = `名前は${name}です．年齢は${age}です`;
+// console.log(message4);
 
+// デフォルト値
+// const sayHello = (name = "guest") => console.log(`こんにちは${name}さん!`);
+// sayHello();
 
-
+const myprofile={
+  age:31
+};
+const {age,name="guest"}=myprofile;
+console.log(age);
+console.log(name);
 
