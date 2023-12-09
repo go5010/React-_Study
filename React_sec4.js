@@ -30,8 +30,34 @@
 // }
 // console.log(func3(2,4));
 
-const func3=(num1,num2)=>({
-  hoge:num1,
-  huga:num2
-});
-console.log(func3(10,20));
+// const func3=(num1,num2)=>({
+//   hoge:num1,
+//   huga:num2
+// });
+// console.log(func3(10,20));
+
+
+// 分割代入
+// const myprofile={
+//   name:"jake",
+//   age:31
+// };
+
+// const message1=`名前は${myprofile.name}です．年齢は${myprofile.age}です．`;
+// console.log(message1);
+
+// const {name,age} = myprofile;
+// const message2 = `名前は${name}です．年齢は${age}です`;
+// console.log(message2);
+
+const myprofile = ["jake", 31];
+// const message2 = `名前は${myprofile[0]}です．年齢は${myprofile[1]}です`;
+// console.log(message2);
+
+const [name, age] = myprofile;
+const message4 = `名前は${name}です．年齢は${age}です`;
+console.log(message4);
+
+
+
+
